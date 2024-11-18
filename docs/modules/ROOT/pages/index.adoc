@@ -807,6 +807,6 @@ image:attachments/158630341/162467460.png[attachments/158630341/162467460,width=
 в журнале событий безопасности. +
 image:attachments/158630341/162467455.png[attachments/158630341/162467455,width=500]
 
-include::appendix1.adoc
+include::appendix1.adoc[]
 
-include::appendix2.adoc
+include::appendix2.adoc[]
