@@ -1,0 +1,11 @@
+site:
+  title: Docs Site
+  start_page: main.adoc 
+content:
+  sources: 
+  - url: https://github.com/Zufallszahl/antora-test/
+    branches: master
+ui: 
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
