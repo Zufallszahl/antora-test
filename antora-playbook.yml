@@ -1,9 +1,11 @@
 site:
-  title: Docs Site
+  title: Test Site
+  url: https://zufallszahl.github.io/antora-test/
 content:
   sources: 
   - url: https://github.com/Zufallszahl/antora-test.git
     branches: master
+
 ui: 
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
