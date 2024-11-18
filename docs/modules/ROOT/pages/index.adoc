@@ -644,7 +644,7 @@ SHA256 файла журнала СБ: <хеш-код>
 [NOTE]
 ====
 *Пример лог-файла журнала событий безопасности*
-image:attachments/158630341/158631128.png[attachments/158630341/158631128,height=41]
+image:./attachments/158630341/158631128.png[./attachments/158630341/158631128,height=41]
 ====
 
 === Содержание лог-файла журнала СБ
@@ -790,7 +790,7 @@ Decoder].
 * нажмите *Выберите файл* и выберите файл сертификата;
 * перетащите сертификат на вкладку с утилитой.
 . Найдите строку `+OCTET STRING+` в узле `+subjectPublicKey+`. +
-image:attachments/158630341/162467444.png[attachments/158630341/162467444,width=700]
+image:./attachments/158630341/162467444.png[./attachments/158630341/162467444,width=700]
 . Нажмите на эту строку и выберите *Copy value*. +
 image:attachments/158630341/162467445.png[attachments/158630341/162467445,width=700]
 . Перейдите на сайт https://hashing.tools/streebog/streebog-256.
