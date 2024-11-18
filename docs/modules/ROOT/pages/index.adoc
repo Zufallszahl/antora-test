@@ -796,16 +796,16 @@ image:attachments/158630341/162467445.png[attachments/158630341/162467445,width=
 . Перейдите на сайт https://hashing.tools/streebog/streebog-256.
 . В выпадающем меню формата входных (1) и выходных (2) данных выберите
 *hex*. +
-image:attachments/158630341/162467452.png[attachments/158630341/162467452,width=500]
+image:attachments/158630341/162467452.png[width=500]
 . Вставьте скопированное значение в поле *Input* и удалите длину ключа,
 а также перенос строки после нее. +
-image:attachments/158630341/162467451.png[attachments/158630341/162467451,width=550] +
+image:attachments/158630341/162467451.png[] +
 Хеш высчитается автоматически, как только сайт обнаружит в поле *Input*
 корректные данные. +
-image:attachments/158630341/162467460.png[attachments/158630341/162467460,width=550]
+image:./attachments/158630341/162467460.png[width=550]
 . Скопируйте первые 4 байта (8 символов) высчитанного хеша и найдите их
 в журнале событий безопасности. +
-image:attachments/158630341/162467455.png[attachments/158630341/162467455,width=500]
+image:./attachments/158630341/162467455.png[]
 
 include::appendix1.adoc[]
 
