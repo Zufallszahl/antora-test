@@ -1,6 +1,6 @@
 name: webclient
-version: '16'
-title: Web Client 16
+version: '1'
+title: Рутокен
 asciidoc:
   attributes:
     toclevels: 10
@@ -12,8 +12,4 @@ asciidoc:
     appendix-caption: Приложение
     wc: WebClient
     dv: Docsvision
-nav: 
-- main.adoc
-- appendix1.adoc
-- appendix2.adoc
 start_page: user:Capabilities.adoc
