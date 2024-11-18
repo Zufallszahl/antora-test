@@ -1,0 +1,14 @@
+name: rutoken
+version: '1'
+title: Рутокен
+asciidoc:
+  attributes:
+    toclevels: 10
+    sectids: ''
+    sectlinks: ''
+    sectanchors: ''
+    toc-title: Содержание
+    figure-caption: Рисунок
+    appendix-caption: Приложение
+    wc: WebClient
+    dv: Docsvision

@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Test Site</title>
+    <link rel="canonical" href="https://zufallszahl.github.io/antora-test/rutoken/1/appendix2.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://zufallszahl.github.io/antora-test">Test Site</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rutoken" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Рутокен</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Рутокен</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+<div class="edit-this-page"><a href="https://github.com/Zufallszahl/antora-test/edit/main/docs/modules/ROOT/pages/appendix2.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_приложение_2_значения_sw_кодов"><a class="anchor" href="#_приложение_2_значения_sw_кодов"></a><a class="link" href="#_приложение_2_значения_sw_кодов">Приложение 2. Значения SW-кодов</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Рутокен может возвращать следующие сочетания кодов SW1-SW2:</p>
+</div>
+<details>
+<summary class="title">Таблица кодов возврата</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">SW1</th>
+<th class="tableblock halign-left valign-top">Значение SW1</th>
+<th class="tableblock halign-left valign-top">SW2</th>
+<th class="tableblock halign-left valign-top">Значение SW2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x90</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Команда выполнена успешно</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет дополнительной
+информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x63</strong><br>
+<br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неудачная аутентификация</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет дополнительной информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xCX</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">X – количество оставшихся попыток<br>
+доступа к данному DO</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x64</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Состояние памяти токена не изменилось (неожиданный конец
+файлового объекта или ошибка перед началом записи в память)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет
+дополнительной информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x65</strong><br>
+<br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Состояние памяти токена изменилось (ошибка в процессе записи в
+память)<br>
+<br></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет дополнительной информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x81</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Повреждение памяти (memory failure)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x67</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверная длина входного и/или выходного буфера (Lc и/или Le)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет дополнительной информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x68</strong><br>
+<br>
+<br>
+<br></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ошибка, связанная с информацией в байте CLA</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x81</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Логические каналы не поддерживаются</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x82</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Secure Messaging не поддерживается</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x83</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ожидается завершающая команда цепочки<br>
+(выдается при попытке выполнить другую команду<br>
+до завершения цепочки команд)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x84</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Цепочка команд не поддерживается</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x69</strong>
+<br></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Команда не позволена<br>
+(command not allowed)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x82</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Права доступа неудовлетворительны для выполнения команды (нет
+прав для выполнения команды)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x83</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Файловый объект заблокирован</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x84</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Референсные данные испорчены или неверные</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x85</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Непригодные условия выполнения команды<br>
+(например, попытка удаления непустой папки)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x86</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет текущего EF/RSF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x87</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отсутствует обязательный<br>
+элемент данных (TLV-структура) Secure Messaging</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x88</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Недопустимый или некорректный<br>
+элемент данных Secure Messaging</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x89</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Команда недопустима на данной стадии (фазе)<br>
+жизненного цикла файлового объекта/карты</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x94</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ключ шифрования не предназначен<br>
+для выполнения данной операции</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x96</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверная ЭП или имитовставка<br>
+(в командах PSO | VCC и PSO | VDS)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x6A</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверные параметры команды</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x80</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверные параметры
+(данные)<br>
+во входном буфере (в поле DATA)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x81</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Затребованная функция этой команды<br>
+не поддерживается</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x82</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Файловый объект не найден</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x84</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Недостаточно места в EEPROM-памяти токена</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x86</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверные параметры команды (P1-P2)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x88</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Референсные данные не найдены</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x89</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Файловый объект уже существует</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x6B</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Заданное смещение – за границей двоичного файла</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет
+дополнительной информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x6C</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверная длина выходного буфера (Le)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xXX</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XX –
+рекомендуемая точная длина выходного буфера</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x6D</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверная или неподдерживаемая команда</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет
+дополнительной информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x6E</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверное или неподдерживаемое значение CLA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x00</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нет
+дополнительной информации</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x6F</strong>
+<br></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Собственный класс ошибки</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x01</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Токен имеет протокол обмена, не поддерживаемый<br>
+USB-драйвером (более новый, чем в драйвере)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x02</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Токен имеет аппаратную конфигурацию,<br>
+отличную от ожидаемой</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x03</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Токен не поддерживает затребованный<br>
+при форматировании объем памяти</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x10</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ошибка выполнения<br>
+криптографического преобразования</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x11</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Нарушение работоспособности (ошибка) аппаратной подсистемы
+устройства</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x12</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Закончился ресурс ключей ГСЧ.<br>
+Генерация случайных чисел более невозможна.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x20</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Повреждение системной области памяти или микропрограммы
+(ошибка CRC)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x21</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неустранимая ошибка в оперативной памяти.<br>
+Токен сохранил контекст ошибки и отключился</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x22</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Критический износ EEPROM-памяти.<br>
+Операция записи была отвергнута</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x30</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Требуется переоткрытие канала Secure Messaging<br>
+(т.е. выработка новых KEK и CEK)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x31</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Требуется выработать новый CEK<br>
+(в рамках текущего канала SM)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x32</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Не совпала имитовставка<br>
+в составе защищенной SM APDU-команды</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x33</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Значение счетчика команды меньше, чем ожидается<br>
+(но команда корректна)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x34</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>ID команды не соответствует ожидаемому<br>
+(но команда корректна)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x35</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Переоткрытие канала SM невозможно<br>
+(еще не истек таймаут)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x37</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>При зашифровании APDU-ответа произошла фатальная ошибка</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x38</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Невозможно вернуть зашифрованный ответ<br>
+(нет данных о значении Le)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x39</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Не загружен ключ активации</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x3A</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Операция должна быть защищена SM<br>
+(т.е. требуется защищенный канал)<br>
+или вообще не может быть выполнена<br>
+по бесконтактному интерфейсу</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x3F</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Secure</em> <em>Messaging:</em></p>
+</div>
+<div class="paragraph">
+<p>Отладочный код возврата.<br>
+Об обстоятельствах его возникновения<br>
+сообщать разработчикам SM</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x40</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Мультиинтерфесные устройства:</em></p>
+</div>
+<div class="paragraph">
+<p>Эта команда не может быть выполнена<br>
+по бесконтактному интерфейсу</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x50</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Ошибка при входе в командный режим Bluetooth–модуля</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x51</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Ошибка при установке текущих настроек Bluetooth–модуля</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x52</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Ошибка при обмене с Apple–крипточипом</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x53</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Аппаратная ошибка при установке интерфейса обмена.<br>
+Интерфейс не был изменен</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x55</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Ошибка при обмене с кнопкой<br>
+(когда кнопка физически присутствует)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x56</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Ошибка инициализации RTC</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x57</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Ошибка чтения/записи RTC</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x58</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Дата/время не заданы</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x59</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка встроенной аппаратуры:</em></p>
+</div>
+<div class="paragraph">
+<p>Дата/время искажены</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x83</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Обнаружено нарушение протокола обмена с токеном</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x84</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Токен занят обработкой другой команды</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x85</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">В данной папке уже создано максимальное количество файловых
+объектов.<br>
+Создание нового файлового объекта невозможно</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x86</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Токен работает не с правами доступа «Гость».<br>
+Перед выполнением аутентификации владельца<br>
+требуется очистить права доступа<br>
+командой RESET ACCESS RIGHTS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x87</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверная контрольная сумма защищенного файлового объекта</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x88</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Слишком много локальных LogIn’ов<br>
+(хранилище заполнено)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x89</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Размер нового PIN-кода меньше минимально допустимого для
+этого CHV-RSF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x8A</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Журнал ошибочных операций токена переполнен.<br>
+Основная функциональность токена заблокирована<br>
+до момента очистки журнала либо<br>
+до момента низкоуровневого форматирования токена</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x8B</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Необходимо задать или сменить<br>
+аутентификационные данные</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x8C</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PIN-код не удовлетворяет всем текущим политикам качества.<br>
+Операция не выполнена</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x8D</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PIN-код содержится в истории (недавно использовался).<br>
+PIN-код не был изменен</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x90</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ожидается транзакция с другим ID (КриптоПро ФКН)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x91</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Исчерпан счетчик операций EKE (КриптоПро ФКН)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x92</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Исчерпан счетчик операций подписи (КриптоПро ФКН)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x93</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Исчерпан счетчик операций DH (КриптоПро ФКН)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x94</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Исчерпан счетчик неуспешных операций (КриптоПро ФКН)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0x95</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Исчерпан счетчик последовательных<br>
+неуспешных операций (вводов PINа EKE) (КриптоПро ФКН)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA0</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неверное функционирование криптоалгоритма или ГСЧ,<br>
+выявленное в процессе его реальной работы<br>
+(а не при диагностике карты)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA1</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Контекст ФКН2 не сформирован</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA2</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Контекст ФКН2 уже сформирован</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA3</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Поиск контейнеров ФКН2 не инициирован</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA4</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Нарушение ID транзакции</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA5</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Попытка выполнить 2-й шаг аутентификации<br>
+по EKE без выполнения 1-го шага</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA6</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Попытка чтения текущего состояния SM,<br>
+если SM-канал не открыт</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA7</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Secure Messaging: формат пришедшей команды верен,<br>
+однако имитовставка неправильная</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA8</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Secure Messaging: нет поля New Le,<br>
+невозможно вернуть защищенный ответ</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xA9</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Не поддерживается данный алгоритм<br>
+аутентификации по EKE или для подписи</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xAA</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Токен не находится в режиме «белых» хеш-значений</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xAB</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2:</em></p>
+</div>
+<div class="paragraph">
+<p>Данное хеш-значение не найдено в списке «белых»<br>
+(если на токене установлен режим «белых» хеш-значений)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xAC</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка КриптоПро ФКН2 (возвращается устройством-компаньоном):</em></p>
+</div>
+<div class="paragraph">
+<p>Команда была отвергнута устройством-компаньоном,<br>
+т.к. не может быть послана извне</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xC0</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка</em> <em>Rutoken</em> <em>ECP</em> <em>touch:</em></p>
+</div>
+<div class="paragraph">
+<p>Операция не была подтверждена<br>
+нажатием кнопки до истечения таймаута</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xC1</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка Хранилищ:</em></p>
+</div>
+<div class="paragraph">
+<p>Создаваемый сертификат является копией<br>
+уже загруженного в Хранилище</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xC2</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка Хранилищ:</em></p>
+</div>
+<div class="paragraph">
+<p>Хранилище заполнено,<br>
+нет возможности добавить новый объект</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xC3</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка Хранилищ:</em></p>
+</div>
+<div class="paragraph">
+<p>Этот сертификат был ранее<br>
+удален из Хранилища (помещен в список удаленных),<br>
+повторное создание сертификата невозможно.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xC4</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка Хранилищ:</em></p>
+</div>
+<div class="paragraph">
+<p>Timestamp объекта содержит<br>
+более раннюю отметку времени,<br>
+чем у уже записанного в токене.<br>
+Объект не может быть обновлен</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xC5</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка Хранилищ:</em></p>
+</div>
+<div class="paragraph">
+<p>Нарушена контрольная сумма образа с ПО.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xCC</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка Хранилищ:</em></p>
+</div>
+<div class="paragraph">
+<p>Данное Хранилище отсутствует (не было сформировано) на токене</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xCD</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><em>Ошибка Хранилищ:</em></p>
+</div>
+<div class="paragraph">
+<p>Данное Хранилище уже сформировано, повторное создание невозможно</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xF0</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отладочные коды возврата.<br>
+Об обстоятельствах их возникновения<br>
+просьба сообщать разработчикам</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xF1</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>0xF2</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

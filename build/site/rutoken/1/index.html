@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Test Site</title>
+    <link rel="canonical" href="https://zufallszahl.github.io/antora-test/rutoken/1/index.html">
+    <meta name="generator" content="Antora 3.1.9">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://zufallszahl.github.io/antora-test">Test Site</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rutoken" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Рутокен</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Рутокен</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+<div class="edit-this-page"><a href="https://github.com/Zufallszahl/antora-test/edit/main/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div id="toc" class="toc">
+<div id="toctitle">Содержание</div>
+<ul class="sectlevel1">
+<li><a href="#_общая_информация">Общая информация</a>
+<ul class="sectlevel2">
+<li><a href="#_поддерживаемые_ос">Поддерживаемые ОС</a></li>
+<li><a href="#_поддерживаемые_устройства">Поддерживаемые устройства</a></li>
+</ul>
+</li>
+<li><a href="#_работа_с_утилитой">Работа с утилитой</a>
+<ul class="sectlevel2">
+<li><a href="#_ошибки_диагностики">Ошибки диагностики</a></li>
+</ul>
+</li>
+<li><a href="#_лог_файл_диагностики">Лог-файл диагностики</a>
+<ul class="sectlevel2">
+<li><a href="#_параметры_лог_файла_диагностики">Параметры лог-файла диагностики</a></li>
+<li><a href="#_содержание_лог_файла_диагностики">Содержание лог-файла диагностики</a></li>
+<li><a href="#_интерпретация_результатов_диагностики">Интерпретация результатов диагностики</a>
+<ul class="sectlevel3">
+<li><a href="#_уровни_критичности">Уровни критичности</a></li>
+<li><a href="#id-УтилитаДиагностикиРутокен.Руководствопоиспользованию-Статусы">Статусы</a></li>
+<li><a href="#_логвыгрузки_журнала_событий_безопасности">Лог выгрузки журнала событий безопасности</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_журнал_событий_безопасности">Журнал событий безопасности</a>
+<ul class="sectlevel2">
+<li><a href="#_параметры_лог_файла_журнала_сб">Параметры лог-файла журнала СБ</a></li>
+<li><a href="#_содержание_лог_файла_журнала_сб">Содержание лог-файла журнала СБ</a></li>
+<li><a href="#_проверка_целостности_данных_лог_файла_журнала_сб">Проверка целостности данных лог-файла журнала СБ</a></li>
+<li><a href="#_определение_сертификата_с_удаленным_ключом">Определение сертификата с удаленным ключом</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_общая_информация"><a class="anchor" href="#_общая_информация"></a><a class="link" href="#_общая_информация">Общая информация</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Утилита Диагностики Рутокен</strong> (УДР) предназначена для проверки работы
+устройств Рутокен. Она позволяет получить полную информацию о работе
+устройства и его параметрах. На некоторых устройствах также можно
+выгрузить журнал событий безопасности с информацией об операциях,
+совершенных на Рутокене.</p>
+</div>
+<div class="paragraph">
+<p>Утилита реализована в виде консольного приложения, которое необходимо
+загрузить на компьютер и сохранить в отдельной папке. После запуска
+утилиты в ее папке появится папка <code>logs</code>, в которой будут создаваться
+лог-файлы в формате TXT.</p>
+</div>
+<div class="paragraph">
+<p>Количество проверок зависит от модели устройства Рутокен и версии
+микропрограммы (МП). Все проверки и их наличие для разных моделей
+Рутокенов описаны в Приложении 1.</p>
+</div>
+<div class="sect2">
+<h3 id="_поддерживаемые_ос"><a class="anchor" href="#_поддерживаемые_ос"></a><a class="link" href="#_поддерживаемые_ос">Поддерживаемые ОС</a></h3>
+<div class="paragraph">
+<p>Утилита работает в следующих операционных системах (ОС):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows 7 и выше;</p>
+</li>
+<li>
+<p>macOS 10.15 и выше;</p>
+</li>
+<li>
+<p>DEB-based дистрибутивы Linux:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ubuntu 18 и выше;</p>
+</li>
+<li>
+<p>Debian 10 и выше;</p>
+</li>
+<li>
+<p>Astra Linux 1.7, 1.8.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>RPM-based дистрибутивы Linux:<br></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Centos 7, 8;</p>
+</li>
+<li>
+<p>ROSA Linux 7.3 и выше;</p>
+</li>
+<li>
+<p>РЕД ОС 7.3, 8;</p>
+</li>
+<li>
+<p>Alter OS.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ALT Linux 8, 9, 10.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_поддерживаемые_устройства"><a class="anchor" href="#_поддерживаемые_устройства"></a><a class="link" href="#_поддерживаемые_устройства">Поддерживаемые устройства</a></h3>
+<div class="paragraph">
+<p>При помощи утилиты можно проверить работу следующих устройств:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Рутокен TLS;</p>
+</li>
+<li>
+<p>линейка Рутокен Lite;</p>
+</li>
+<li>
+<p>линейка Рутокен ЭЦП 2.0;</p>
+</li>
+<li>
+<p>линейка Рутокен ЭЦП 3.0:<br></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Рутокен ЭЦП 3.0 3220;</p>
+</li>
+<li>
+<p>Рутокен ЭЦП 3.0 NFC 3100;</p>
+</li>
+<li>
+<p>Рутокен ЭЦП 3.0 3120.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Журнал событий безопасности доступен на следующих устройствах:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Рутокен ЭЦП 3.0 3120.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_работа_с_утилитой"><a class="anchor" href="#_работа_с_утилитой"></a><a class="link" href="#_работа_с_утилитой">Работа с утилитой</a></h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Загрузите утилиту на компьютер и сохраните ее в отдельной папке.</p>
+</li>
+<li>
+<p>Подключите Рутокен к компьютеру.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>К компьютеру должно быть подключено только одно устройство Рутокен,
+иначе произвести диагностику не удастся.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>В зависимости от ОС компьютера, к которому подключено устройство,
+выполните следующие действия:</p>
+<details>
+<summary class="title">На ОС Windows:</summary>
+<div class="content">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Дважды щелкните по файлу <strong>rutoken-diagnostic-tool.exe</strong>. Откроется
+консоль и запустится проверка подключенного устройства.</p>
+</li>
+<li>
+<p>Дождитесь окончания диагностики.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">На ОС Linux:</summary>
+<div class="content">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Откройте папку с утилитой.</p>
+</li>
+<li>
+<p>Щелкните правой кнопкой мыши в окне папки и выберите пункт <strong>Открыть в
+терминале</strong>.</p>
+</li>
+<li>
+<p>Выполните команду:</p>
+</li>
+</ol>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>./rutoken-diagnostic-tool</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Дождитесь окончания диагностики.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">На macOS:</summary>
+<div class="content">
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Откройте папку с утилитой.</p>
+</li>
+<li>
+<p>Щелкните правой кнопкой мыши по названию файла
+<strong>rutoken-diagnostic-tool</strong>.</p>
+</li>
+<li>
+<p>Выберите пункт <strong>Свойства.</strong></p>
+</li>
+<li>
+<p>В разделе <strong>Открывать в приложении</strong> выберите <strong>Терминал (по
+умолчанию)</strong>.</p>
+</li>
+<li>
+<p>Дважды щелкните по названию файла <strong>rutoken-diagnostic-tool</strong>.</p>
+</li>
+<li>
+<p>Дождитесь окончания диагностики.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+</li>
+<li>
+<p>Если работа утилиты завершилась с ошибкой, найдите текст ошибки в
+таблице ниже, устраните проблему и снова запустите утилиту.</p>
+</li>
+<li>
+<p>Если в консоли отобразилось сообщение «Процесс завершен», то
+диагностика прошла успешно. Чтобы ознакомиться с ее результатами,
+откройте сохраненный лог-файл.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Диагностика внешних пользователей</strong></p>
+</div>
+<div class="paragraph">
+<p>Если диагностика проводилась на компьютере внешнего пользователя, после
+окончания работы удалите УДР, лог-файлы и файлы журнала событий
+безопасности.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_ошибки_диагностики"><a class="anchor" href="#_ошибки_диагностики"></a><a class="link" href="#_ошибки_диагностики">Ошибки диагностики</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Текст ошибки</th>
+<th class="tableblock halign-left valign-top">Описание</th>
+<th class="tableblock halign-left valign-top">Решение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Не удалось произвести<br>
+проверку. Проверьте чтобы<br>
+к компьютеру был подключен<br>
+только один Рутокен</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">К компьютеру подключено несколько устройств Рутокен</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отключите все устройства Рутокен<br>
+кроме того, которое нужно диагностировать,<br>
+и запустите утилиту снова</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Не удалось сохранить<br>
+Лог-файл</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">У утилиты диагностики нет прав на запись файлов в директорию</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Убедитесь, что у вас есть права на создание файлов<br>
+и папок в директории, в которой находится утилита.</p>
+</div>
+<div class="paragraph">
+<p><strong>На ОС Windows:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Щелкните правой кнопкой мыши<br>
+по папке с утилитой.</p>
+</li>
+<li>
+<p>Откройте <strong>Свойства (Properties)</strong>.</p>
+</li>
+<li>
+<p>Перейдите на вкладку <strong>Безопасность (Security)</strong>.</p>
+</li>
+<li>
+<p>Нажмите <strong>Изменить&#8230;&#8203; (Edit&#8230;&#8203;)</strong>.</p>
+</li>
+<li>
+<p>В столбце <strong>Разрешить (Allow) <br>
+</strong>поставьте галочку напротив <br>
+<strong>Полный доступ (Full control)</strong>.</p>
+</li>
+<li>
+<p>Нажмите <strong>ОК</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>На ОС Linux:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Откройте терминал в папке с утилитой.</p>
+</li>
+<li>
+<p>Дайте пользовательской учетной записи права<br>
+на чтение и запись в директорию с утилитой:<br>
+<code>sudo chmod -R u+rw ./</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>На macOS:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Щелкните правой кнопкой мыши<br>
+по папке с утилитой.</p>
+</li>
+<li>
+<p>Выберите пункт <strong>Свойства.</strong></p>
+</li>
+<li>
+<p>В разделе <strong>Общий доступ и права доступа</strong><br>
+для своей учетной записи выберите <strong>Чтение<br>
+и запись</strong></p>
+</li>
+</ol>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="red">some pcsc error acquired: 31(0x0000001f)</span></p>
+</div>
+<div class="paragraph">
+<p><span class="red">some pcsc error acquired: -2146435050(0x80100016)</span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Утилита потеряла связь с устройством<br>
+в процессе диагностики</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Отключите Рутокен от компьютера,<br>
+подключите снова и перезапустите утилиту</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Не удалось распознать Рутокен</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">К компьютеру подключено устройство
+Рутокен, но утилита не может его опознать</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Если ошибка возникла при попытке диагностировать:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>USB-токен — подключите его к другому USB-разъему.</p>
+</li>
+<li>
+<p>Смарт-карту без поддержки NFC — убедитесь, что смарт-карта вставлена в
+считыватель правильной стороной.</p>
+</li>
+<li>
+<p>Смарт-карту с поддержкой NFC с помощью бесконтактного считывателя —
+перед запуском утилиты убедитесь, что смарт-карта приложена к
+считывателю. Не убирайте смарт-карту, пока утилита не закончит
+диагностику</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_лог_файл_диагностики"><a class="anchor" href="#_лог_файл_диагностики"></a><a class="link" href="#_лог_файл_диагностики">Лог-файл диагностики</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Лог-файл диагностики</strong> — это файл, в котором содержатся базовые сведения
+об устройстве и его состоянии, а также информация о проведенных в ходе
+диагностики проверках и их результатах. Данные из лог-файла диагностики
+используются для оценки работоспособности устройства.</p>
+</div>
+<div class="sect2">
+<h3 id="_параметры_лог_файла_диагностики"><a class="anchor" href="#_параметры_лог_файла_диагностики"></a><a class="link" href="#_параметры_лог_файла_диагностики">Параметры лог-файла диагностики</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Сохраняется в папке <code>logs</code> в той же директории, где находится
+утилита <code>rutoken-diagnostic-tool</code><strong>.</strong></p>
+</li>
+<li>
+<p>Сохраняется в формате TXT, кодировка UTF-8.</p>
+</li>
+<li>
+<p>В конце каждой строки лог-файла используется символ LF (Line Feed).</p>
+</li>
+<li>
+<p>Название лог-файла состоит из: префикса <code>log</code>, ID Рутокена, даты и
+времени его диагностики.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Пример лог-файла диагностики</strong>
+<span class="confluence-embedded-file-wrapper  confluence-embedded-manual-size"><span class="image unresolved"><img src="attachments/158630341/158631126.png" alt="attachments/158630341/158631126" height="35"></span></span></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_содержание_лог_файла_диагностики"><a class="anchor" href="#_содержание_лог_файла_диагностики"></a><a class="link" href="#_содержание_лог_файла_диагностики">Содержание лог-файла диагностики</a></h3>
+<div class="paragraph">
+<p>Количество разделов и информация в них могут меняться в зависимости от
+того, какие проверки может пройти устройство. Полный список этих
+проверок находится в Приложении 1.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Раздел</th>
+<th class="tableblock halign-left valign-top">Содержание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка целостности ОС устройства</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Контрольная сумма ОС Рутокен, которая вычисляется в ходе проверки,<br>
+и итог сравнения ее значения с эталонным</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Если в результате данной проверки отобразилась ошибка, то результаты
+остальных проверок могут быть недостоверными, поэтому мы не рекомендуем
+их использовать.</p>
+</div>
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Получение кратких сведений об устройстве</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Информация о подключенном Рутокене:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>модель;</p>
+</li>
+<li>
+<p>ID;</p>
+</li>
+<li>
+<p>сеансовый счетчик изменений в файловой структуре устройства;</p>
+</li>
+<li>
+<p>счетчик подключений к USB-шине;</p>
+</li>
+<li>
+<p>версия микропрограммы;</p>
+</li>
+<li>
+<p>размер занятой EEPROM-памяти;</p>
+</li>
+<li>
+<p>размер свободной EEPROM-памяти</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка работы криптоалгоритмов</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Информация о работе криптоалгоритмов:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ГОСТ 28147-89;</p>
+</li>
+<li>
+<p>ГОСТ 34.10-2001;</p>
+</li>
+<li>
+<p>ГОСТ 34.11-1994;</p>
+</li>
+<li>
+<p>ВКО 2001;</p>
+</li>
+<li>
+<p>ГОСТ 34.10-2012;</p>
+</li>
+<li>
+<p>ГОСТ 34.11-2012;</p>
+</li>
+<li>
+<p>ВКО 2012;</p>
+</li>
+<li>
+<p>ГОСТ Р 34.12-2015 Магма;</p>
+</li>
+<li>
+<p>ГОСТ Р 34.12-2015 Кузнечик;</p>
+</li>
+<li>
+<p>ECDH</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка целостности КИ</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Информация о состоянии сохраненных на Рутокене объектов:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>главный ключ;</p>
+</li>
+<li>
+<p>ключ для ГСЧ;</p>
+</li>
+<li>
+<p>IV для ГСЧ;</p>
+</li>
+<li>
+<p>глобальные PIN-коды;</p>
+</li>
+<li>
+<p>RSF-файлы</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Получение журнала ошибочных операций</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Значения счетчиков ошибочных
+операций</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Получение статуса сектора памяти</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Информация об использованной
+встроенной EEPROM-памяти устройства по секторам</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка работоспособности генератора случайных чисел (ГСЧ)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Информация
+о состоянии ГСЧ</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка поддержки журнала СБ</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Информация о том, поддерживает ли устройство работу с журналом событий
+безопасности.</p>
+</div>
+<div class="paragraph">
+<p>Если устройство поддерживает журналирование, после этого раздела будет
+приведен лог выгрузки журнала событий безопасности</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Последняя строка лог-файла</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Итог прохождения проверок</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_интерпретация_результатов_диагностики"><a class="anchor" href="#_интерпретация_результатов_диагностики"></a><a class="link" href="#_интерпретация_результатов_диагностики">Интерпретация результатов диагностики</a></h3>
+<div class="sect3">
+<h4 id="_уровни_критичности"><a class="anchor" href="#_уровни_критичности"></a><a class="link" href="#_уровни_критичности">Уровни критичности</a></h4>
+<div class="paragraph">
+<p>В результате проверки рядом с каждым перечисленным ниже параметром
+отображается уровень критичности. Этот уровень помогает оценить
+работоспособность Рутокена.</p>
+</div>
+<div class="paragraph">
+<p>В утилите реализовано два уровня критичности:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>critical</strong> — означает, что Рутокен можно использовать с ограничениями.</p>
+</li>
+<li>
+<p><strong>fatal</strong> — означает, что Рутокен нельзя использовать.<br></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Уровень критичности оценивается с некоторыми ограничениями:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>не оцениваются числовые данные;</p>
+</li>
+<li>
+<p>не оцениваются ошибки, возникающие при получении информации.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Если проверка прошла успешно, уровень критичности не отображается.</p>
+</div>
+<div class="paragraph">
+<p>Названия проверок и критичность их влияния на работоспособность Рутокена
+представлены в таблице ниже.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 99%;">
+<colgroup>
+<col style="width: 5%;">
+<col style="width: 24%;">
+<col style="width: 71%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">№</th>
+<th class="tableblock halign-left valign-top">Название проверки</th>
+<th class="tableblock halign-left valign-top">Влияние на работоспособность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка целостности ОС Рутокен</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[fatal]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка работы криптоалгоритмов</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[fatal] — если в результате
+проверки работы всех криптоалгоритмов отобразились ошибки</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ГОСТ 28147-89</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ГОСТ 34.10-2001</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ГОСТ 34.11-1994</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ВКО 2001</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ГОСТ 34.10-2012</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ГОСТ 34.11-2012</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ВКО 2012</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ГОСТ Р 34.12-2015 Магма</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ГОСТ Р 34.12-2015 Кузнечик</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Тестирование алгоритма ECDH</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[critical]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка целостности КИ</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>[critical]  — если в результате проверки целостности всей ключевой
+информации отобразилась хотя бы одна ошибка рядом с параметром со
+статусом [critical].</p>
+</div>
+<div class="paragraph">
+<p>[fatal] — если в результате проверки целостности всей ключевой
+информации отобразилась хотя бы одна ошибка рядом с параметром со
+статусом [fatal]</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка системной ключевой информации</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Если при проверке возникла ошибка, уровень критичности [fatal]
+присваивается:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>главному ключу;</p>
+</li>
+<li>
+<p>ключу для ГСЧ:</p>
+</li>
+<li>
+<p>IV для ГСЧ.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>В общем заключении проверки уровень [fatal] присваивается, если в
+результате проверки хотя бы одного из параметров возникла ошибка со
+статусом [fatal]</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка Глобальных PIN-кодов</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[fatal] — если в результате
+проверки глобальных PIN-кодов отобразилась ошибка рядом с параметром
+Проверка целостности (Администратора/Пользователя)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка RSF файлов</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Если при проверке возникла ошибка, уровень критичности [critical]
+присваивается:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>открытым ключам;</p>
+</li>
+<li>
+<p>закрытым ключам;</p>
+</li>
+<li>
+<p>симметричным ключам;</p>
+</li>
+<li>
+<p>локальным PIN-кодам.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Если проверяемые объекты отсутствуют на Рутокене, уровень критичности
+[critical] присваивается:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>открытым ключам;</p>
+</li>
+<li>
+<p>закрытым ключам;</p>
+</li>
+<li>
+<p>симметричным ключам.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>В общем заключении проверки уровень [fatal] присваивается, если:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>при проверке всех RSF файлов возникла ошибка;</p>
+</li>
+<li>
+<p>при проверке всех ключей не удалось обнаружить объекты</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Получение статуса секторов памяти</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>[critical] — если есть хоть один сектор, который содержит недостоверное
+число перезаписей.</p>
+</div>
+<div class="paragraph">
+<p>[fatal] — если все сектора содержат недостоверное число перезаписей</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Проверка работоспособности ГСЧ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[fatal]</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="id-УтилитаДиагностикиРутокен.Руководствопоиспользованию-Статусы"><a class="anchor" href="#id-УтилитаДиагностикиРутокен.Руководствопоиспользованию-Статусы"></a><a class="link" href="#id-УтилитаДиагностикиРутокен.Руководствопоиспользованию-Статусы">Статусы</a></h4>
+<div class="paragraph">
+<p>В лог-файле после каждого параметра диагностики отображаются статусы.
+Описания значений этих статусов представлены в таблице.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 47%;">
+<col style="width: 53%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Условие</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Вывод статуса</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Проверки</strong></p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Проверка прошла успешно</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>-&gt; Успешно</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Проверяемые файлы отсутствуют</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>-&gt; ОБЪЕКТЫ НЕ ОБНАРУЖЕНЫ</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Проверка прошла с ошибкой</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>-&gt; !ОШИБКА [код ошибки] - &lt;текст ошибки&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>или</em></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[критичность ошибки] -&gt; !ОШИБКА [код ошибки] - &lt;текст ошибки&gt;</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Рутокен не поддерживает проверку</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>Запрошенная функция не поддерживается</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Общее заключение (последняя строка лог-файла)</strong></p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Все проверки завершились успешно</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>Все проверки прошли успешно</pre>
+</div>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Хотя бы одна проверка завершилась с ошибкой</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>При диагностике были выявлены ошибки</pre>
+</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_логвыгрузки_журнала_событий_безопасности"><a class="anchor" href="#_логвыгрузки_журнала_событий_безопасности"></a><a class="link" href="#_логвыгрузки_журнала_событий_безопасности">Лог выгрузки журнала событий безопасности</a></h4>
+<div class="paragraph">
+<p>Процесс выгрузки журнала СБ поэтапно записывается в лог-файле
+диагностики. Если устройство не поддерживает журналирование или в ходе
+выгрузки журнала СБ возникнет ошибка, запись об этом отобразится в
+лог-файле.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 45%;">
+<col style="width: 55%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Этап выгрузки</th>
+<th class="tableblock halign-left valign-top">Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>Проверка поддержки журнала СБ</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">!ОШИБКА [&lt;SW-код&gt;] - &lt;текст ошибки&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Не удалось проверить, поддерживается ли журналирование на устройстве.</p>
+</div>
+<div class="paragraph">
+<p>Процесс выгрузки прерывается</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594; Успешно</p>
+<p class="tableblock">Журнал СБ не поддерживается</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Устройство не поддерживает журналирование. Список устройств, которые
+поддерживают журналирование, находится в разделе <strong>Поддерживаемые
+устройства</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Процесс выгрузки прерывается</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594; Успешно</p>
+<p class="tableblock">Журнал СБ поддерживается</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Устройство поддерживает журналирование.</p>
+</div>
+<div class="paragraph">
+<p>Утилита переходит к следующему этапу выгрузки</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>Чтение журнала СБ</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ОШИБКА [&lt;SW-код&gt;] - &lt;текст ошибки&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Не удалось прочесть журнал или журналирование не поддерживается.</p>
+</div>
+<div class="paragraph">
+<p>Процесс выгрузки прерывается</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594; Успешно</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Журнал удалось прочитать.</p>
+</div>
+<div class="paragraph">
+<p>Утилита переходит к следующему этапу выгрузки</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>Декодирование журнала СБ</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">!ОШИБКА Возникли ошибки при декодировании журнала.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>В журнале нашлись поврежденные TLV-структуры.</p>
+</div>
+<div class="paragraph">
+<p>Журнал СБ выгружается в бинарном формате</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">!ОШИБКА Возникли ошибки при декодировании некоторых записей.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>В журнале встретились неизвестные теги или возникли проблемы при
+преобразовании известных тегов.</p>
+</div>
+<div class="paragraph">
+<p>Журнал СБ выгружается, операции в нем записываются последовательно два
+раза:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Записи, которые удалось преобразовать из бинарного формата в
+человекочитаемый, записываются в человекочитаемом формате. Остальные
+остаются в бинарном формате.</p>
+</li>
+<li>
+<p>Все теги записываются в бинарном формате. Раздел имеет заголовок:
+«Журнал СБ в бинарном формате»</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594; Успешно</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Журнал был полностью декодирован.</p>
+</div>
+<div class="paragraph">
+<p>Утилита переходит к следующему этапу выгрузки</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>Запись журнала СБ в файл</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">!ОШИБКА</p>
+<p class="tableblock">Не удалось создать файл / Не удалось записать в файл</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Чтение и декодирование журнала прошло успешно, но возникла ошибка при
+выгрузке журнала в файл.</p>
+</div>
+<div class="paragraph">
+<p>Журнал СБ не выгружается</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594; Успешно</p>
+<p class="tableblock">Файл security_log-&lt;ID&gt;-&lt;дата&gt;-&lt;время&gt;.txt создан</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Журнал успешно выгрузился в файл.</p>
+</div>
+<div class="paragraph">
+<p>Утилита переходит к следующему этапу выгрузки</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="literalblock">
+<div class="content">
+<pre>Расчет SHA256 файла журнала СБ</pre>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8594; Успешно</p>
+<p class="tableblock">SHA256 файла журнала СБ: &lt;хеш-код&gt;</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Утилита успешно вычислила хеш-код файла журнала по алгоритму SHA256.</p>
+</div>
+<div class="paragraph">
+<p>Выгрузка журнала завершена</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_журнал_событий_безопасности"><a class="anchor" href="#_журнал_событий_безопасности"></a><a class="link" href="#_журнал_событий_безопасности">Журнал событий безопасности</a></h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Журнал событий безопасности поддерживается только на устройствах Рутокен
+ЭЦП 3.0 3120.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Журнал событий безопасности</strong> — это функциональность УДР, записывающая
+операции, происходящие на Рутокене. Данная функциональность требуется
+для расследования инцидентов. На Рутокене журнал хранится в бинарном
+формате в режиме «только для чтения». После завершения диагностики УДР
+автоматически выгружает журнал в человекочитаемом формате на компьютер,
+к которому подключен Рутокен.</p>
+</div>
+<div class="paragraph">
+<p>События в журнале не удаляются в результате форматирования.<br></p>
+</div>
+<div class="sect2">
+<h3 id="_параметры_лог_файла_журнала_сб"><a class="anchor" href="#_параметры_лог_файла_журнала_сб"></a><a class="link" href="#_параметры_лог_файла_журнала_сб">Параметры лог-файла журнала СБ</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Сохраняется в папке <code>logs</code> в той же директории, где находится
+утилита <code>+rutoken-diagnostic-tool</code>.</p>
+</li>
+<li>
+<p>Создается одновременно с лог-файлом диагностики, но сохраняется в
+отдельный лог-файл.</p>
+</li>
+<li>
+<p>Сохраняется в формате TXT, кодировка UTF-8.</p>
+</li>
+<li>
+<p>В конце каждой строки журнала используется символ LF (Line Feed).</p>
+</li>
+<li>
+<p>Название лог-файла журнала состоит из: префикса <code>security_log</code>, ID
+Рутокена, даты и времени его диагностики.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Пример лог-файла журнала событий безопасности</strong>
+<span class="image unresolved"><img src="attachments/158630341/158631128.png" alt="attachments/158630341/158631128" height="41"></span></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_содержание_лог_файла_журнала_сб"><a class="anchor" href="#_содержание_лог_файла_журнала_сб"></a><a class="link" href="#_содержание_лог_файла_журнала_сб">Содержание лог-файла журнала СБ</a></h3>
+<div class="paragraph">
+<p>Если после окончания диагностики лог-файл журнала СБ не появился в папке
+<code>logs</code>, выгрузился в бинарном формате или в нем не хватает информации,
+проверьте, есть ли в лог-файле диагностики ошибки, связанные с
+обработкой журнала. Подробнее об этих ошибках можно почитать в соответствующем
+разделе.</p>
+</div>
+<div class="paragraph">
+<p>Ниже приведен список операций, информация о которых записывается в
+журнал СБ. В начало журнала записывается его версия, далее записываются
+операции, относящиеся к этой версии. Если версий две и более, записи
+выводятся в следующем формате:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Первая версия журнала.</p>
+</li>
+<li>
+<p>Записи операций, относящиеся к первой версии журнала (если такие
+операции были).</p>
+</li>
+<li>
+<p>Вторая версия журнала.</p>
+</li>
+<li>
+<p>Записи операций, относящиеся к первой версии журнала (если такие
+операции были).</p>
+</li>
+<li>
+<p>и т.д.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Каждая запись об операции, кроме записи с версией журнала,
+сопровождается кодом возврата (SW-кодом), который состоит из двух
+частей. Код SW1 задает класс ошибки, а код SW2 позволяет
+конкретизировать данную ошибку в пределах класса. Возможные значения
+SW-кодов приведены в Приложении 2.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 86%;">
+<colgroup>
+<col style="width: 7%;">
+<col style="width: 31%;">
+<col style="width: 62%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">№</th>
+<th class="tableblock halign-left valign-top">Операция</th>
+<th class="tableblock halign-left valign-top">Отображение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Версия журнала</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Номер версии журнала</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Импорт закрытого ключа</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>ID объекта,</p>
+</li>
+<li>
+<p>4 первых байта от хеша открытого ключа (при наличии),</p>
+</li>
+<li>
+<p>«Операция не была завершена» (при необходимости)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Генерация ключевой пары</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>ID объекта (при наличии),</p>
+</li>
+<li>
+<p>4 первых байта от хеша открытого ключа (при наличии),</p>
+</li>
+<li>
+<p>«Операция не была завершена» (при необходимости)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Удаление закрытого ключа</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>ID объекта,</p>
+</li>
+<li>
+<p>4 первых байта от хеша открытого ключа (при наличии),</p>
+</li>
+<li>
+<p>«Операция не была завершена» (при необходимости)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Генерация ключевой пары ФКН2</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>4 первых байта от хеша имени контейнера (при наличии),</p>
+</li>
+<li>
+<p>4 первых байта от хеша первого открытого ключа (при наличии),</p>
+</li>
+<li>
+<p>4 первых байта от хеша второго открытого ключа (при наличии),</p>
+</li>
+<li>
+<p>«Операция не была завершена» (при необходимости)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Удаление контейнера ФКН2</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>4 первых байта от хеша имени контейнера (при наличии),</p>
+</li>
+<li>
+<p>4 первых байта от хеша первого открытого ключа (при наличии),</p>
+</li>
+<li>
+<p>4 первых байта от хеша второго открытого ключа (при наличии),</p>
+</li>
+<li>
+<p>«Операция не была завершена» (при необходимости)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Смена PIN Пользователя</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>«Операция не была завершена» (при необходимости)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Импорт локального PIN</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>ID объекта,</p>
+</li>
+<li>
+<p>«Операция не была завершена» (при необходимости)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Разблокировка PIN-кода</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>Тип аутентификации (при наличии),<br></p>
+</li>
+<li>
+<p>ID объекта (при наличии)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Неуспешная аутентификация</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции,</p>
+</li>
+<li>
+<p>Тип аутентификации,</p>
+</li>
+<li>
+<p>ID объекта (при наличии),</p>
+</li>
+<li>
+<p>Количество оставшихся попыток аутентификации (при наличии)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Форматирование</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Название операции,</p>
+</li>
+<li>
+<p>SW-код операции</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_проверка_целостности_данных_лог_файла_журнала_сб"><a class="anchor" href="#_проверка_целостности_данных_лог_файла_журнала_сб"></a><a class="link" href="#_проверка_целостности_данных_лог_файла_журнала_сб">Проверка целостности данных лог-файла журнала СБ</a></h3>
+<div class="paragraph">
+<p>На устройстве Рутокен журнал СБ хранится в режиме «только для чтения»
+(read only), однако после выгрузки полученный TXT-файл можно изменять.
+Проверить, вносились ли в лог-файл журнала изменения, можно с помощью
+сравнения хешей — хеш меняется, если изменяется содержимое файла. Для
+этого:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>В лог-файле диагностики, который был создан одновременно с лог-файлом
+журнала, найдите строку  <strong>SHA256 файла журнала СБ</strong> — это хеш лог-файла
+журнала, который был автоматически вычислен УДР при его создании.</p>
+</li>
+<li>
+<p>Вычислите хеш текущей версии лог-файла журнала самостоятельно. Сделать
+это можно, например, с помощью консольных утилит:</p>
+<div class="literalblock">
+<div class="content">
+<pre>ОС Windows: certutil -hashfile "имя_файла_журнала_СБ.txt" sha256</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ОС Linux: sha256sum "имя_файла_журнала_СБ.txt"</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>macOS: shasum -a 256 "имя_файла_журнала_СБ.txt"</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Сравните полученный хеш с хешем из лог-файла диагностики. Если хеш,
+сгенерированный с помощью консольной утилиты, не совпадает с хешем в
+лог-файле диагностики, значит, после выгрузки в файл журнала были
+внесены изменения.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_определение_сертификата_с_удаленным_ключом"><a class="anchor" href="#_определение_сертификата_с_удаленным_ключом"></a><a class="link" href="#_определение_сертификата_с_удаленным_ключом">Определение сертификата с удаленным ключом</a></h3>
+<div class="paragraph">
+<p>Чтобы понять, для какого сертификата был удален ключ, вычислите хеш
+открытого ключа, используя сертификат.</p>
+</div>
+<div class="paragraph">
+<p>Чтобы вычислить хеш открытого ключа:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Откройте онлайн-утилиту <a href="https://lapo.it/asn1js/">ASN.1 JavaScript
+Decoder</a>.</p>
+</li>
+<li>
+<p>Загрузите сертификат одним из двух способов:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>нажмите <strong>Выберите файл</strong> и выберите файл сертификата;</p>
+</li>
+<li>
+<p>перетащите сертификат на вкладку с утилитой.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Найдите строку <code>OCTET STRING</code> в узле <code>subjectPublicKey</code>.<br>
+<span class="image unresolved"><img src="attachments/158630341/162467444.png" alt="attachments/158630341/162467444" width="700"></span></p>
+</li>
+<li>
+<p>Нажмите на эту строку и выберите <strong>Copy value</strong>.<br>
+<span class="image unresolved"><img src="attachments/158630341/162467445.png" alt="attachments/158630341/162467445" width="700"></span></p>
+</li>
+<li>
+<p>Перейдите на сайт <a href="https://hashing.tools/streebog/streebog-256" class="bare">https://hashing.tools/streebog/streebog-256</a>.</p>
+</li>
+<li>
+<p>В выпадающем меню формата входных (1) и выходных (2) данных выберите
+<strong>hex</strong>.<br>
+<span class="image unresolved"><img src="attachments/158630341/162467452.png" alt="attachments/158630341/162467452" width="500"></span></p>
+</li>
+<li>
+<p>Вставьте скопированное значение в поле <strong>Input</strong> и удалите длину ключа,
+а также перенос строки после нее.<br>
+<span class="image unresolved"><img src="attachments/158630341/162467451.png" alt="attachments/158630341/162467451" width="550"></span><br>
+Хеш высчитается автоматически, как только сайт обнаружит в поле <strong>Input</strong>
+корректные данные.<br>
+<span class="image unresolved"><img src="attachments/158630341/162467460.png" alt="attachments/158630341/162467460" width="550"></span></p>
+</li>
+<li>
+<p>Скопируйте первые 4 байта (8 символов) высчитанного хеша и найдите их
+в журнале событий безопасности.<br>
+<span class="image unresolved"><img src="attachments/158630341/162467455.png" alt="attachments/158630341/162467455" width="500"></span></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>include::./appendix1.adoc</p>
+</div>
+<div class="paragraph">
+<p>include::./appendix2.adoc</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
